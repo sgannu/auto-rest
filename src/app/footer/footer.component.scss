@@ -1,0 +1,38 @@
+$topnav-background-color: #fff;
+:host {
+    .footer {
+        background-color: $topnav-background-color;
+        margin-bottom: 20px;
+        color: #666;
+    }
+    .drop-shadow {
+        position: relative;
+        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+    }
+    .drop-shadow:before, .drop-shadow:after {
+        content: "";
+        position: absolute;
+        z-index: -2;
+    }
+    .curved:before {
+        top: 10px;
+        bottom: 10px;
+        left: 0;
+        right: 50%;
+        -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        -moz-border-radius: 20px / 100px;
+        border-radius: 20px / 100px;
+    }
+    .curved-hz-2:before {
+        top: 0;
+        bottom: 0;
+        left: 50px;
+        right: 50px;
+        -moz-border-radius: 300px / 10px;
+        border-radius: 200px / 10px;
+    }
+}
